@@ -22,15 +22,15 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 ### Props
 
-|       Name        |      Type       |   Default   |   Binding Way   | Description |
-| :---------------: | :-------------: | :---------: | :-------------: | :---------: |
-|       title       |    `String`     | _undefined_ |     :title      |     ...     |
-|       text        |    `String`     | _undefined_ |      :text      |     ...     |
-|   negative-text   |    `String`     | _'Reject'_  | :negative-text  |     ...     |
-|   positive-text   |    `String`     | _'Accept'_  | :positive-text  |     ...     |
-|     closable      |    `Boolean`    |   _false_   |    :closable    |     ...     |
-| on-positive-click | `() => boolean` |   _false_   | @positive-click |     ...     |
-| on-negative-click | `() => boolean` |   _false_   | @negative-click |     ...     |
+|       Name        |      Type       |   Default   |   Binding Way   |                                                                      Description                                                                       |
+| :---------------: | :-------------: | :---------: | :-------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------: |
+|       title       |    `String`     | _undefined_ |     :title      |                                                                          ...                                                                           |
+|       text        |    `String`     | _undefined_ |      :text      |                                                                          ...                                                                           |
+|   negative-text   |    `String`     | _'Reject'_  | :negative-text  |                                    <small>Confirm button text. Corresponding button won't show if not set.</small>                                     |
+|   positive-text   |    `String`     | _'Accept'_  | :positive-text  |                                   <small>Düğme metnini iptal edin. Ayarlanmamışsa ilgili düğme gösterilmez.</small>                                    |
+|     closable      |    `Boolean`    |   _false_   |    :closable    |                                                      <small>Whether to show close button.</small>                                                      |
+| on-positive-click | `() => boolean` |   _false_   | @positive-click | <small>The default behavior is closing the confirm. Return `false` or resolve `false` or `Promise rejected` will prevent the default behavior.</small> |
+| on-negative-click | `() => boolean` |   _false_   | @negative-click | <small>The default behavior is closing the confirm. Return `false` or resolve `false` or `Promise rejected` will prevent the default behavior.</small> |
 
 ### Slots
 
