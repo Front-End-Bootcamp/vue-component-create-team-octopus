@@ -10,7 +10,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 # Autocomplate component
 
-## Props
+### Props
 
 |    Name     |   Type   |   Default   |  Binding Way  | Description |
 | :---------: | :------: | :---------: | :-----------: | :---------: |
@@ -20,7 +20,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 # Popup component
 
-## Props
+### Props
 
 |       Name        |      Type       |   Default   |   Binding Way   | Description |
 | :---------------: | :-------------: | :---------: | :-------------: | :---------: |
@@ -32,7 +32,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 | on-positive-click | `() => boolean` |   _false_   | @positive-click |     ...     |
 | on-negative-click | `() => boolean` |   _false_   | @negative-click |     ...     |
 
-## Slots
+### Slots
 
 |  Name   | Parameters | Description |
 | :-----: | :--------: | :---------: |
@@ -42,7 +42,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 # Cookie component
 
-## Props
+### Props
 
 |   Name   |   Type    |   Default   |   Binding Way    | Description |
 | :------: | :-------: | :---------: | :--------------: | :---------: |
@@ -50,7 +50,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 |   text   | `String`  | _undefined_ |      :text       |     ...     |
 | feedback | `Boolean` |   _false_   | v-model:feedback |     ...     |
 
-## Slots
+### Slots
 
 |  Name   | Parameters | Description |
 | :-----: | :--------: | :---------: |
@@ -58,7 +58,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 # Notification component
 
-## Props
+### Props
 
 |   Name    |   Type    |    Default    | Binding Way | Description |
 | :-------: | :-------: | :-----------: | :---------: | :---------: |
