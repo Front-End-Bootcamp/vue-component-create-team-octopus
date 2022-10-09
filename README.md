@@ -26,11 +26,11 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 | :---------------: | :-------------: | :---------: | :-------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------: |
 |       title       |    `String`     | _undefined_ |     :title      |                                                                          ...                                                                           |
 |       text        |    `String`     | _undefined_ |      :text      |                                                                          ...                                                                           |
-|   negative-text   |    `String`     | _'Cencel'_  | :negative-text  |                                    <small>Cancel button text. Corresponding button won't show if not set.</small>                                     |
-|   positive-text   |    `String`     | _'Accept'_  | :positive-text  |                                   <small>Confirm button text. Corresponding button won't show if not set.</small>                                    |
-|     closable      |    `Boolean`    |   _false_   |    :closable    |                                                      <small>Whether to show close button.</small>                                                      |
-| on-positive-click | `() => boolean` |   _false_   | @positive-click | <small>The default behavior is closing the confirm. Return `false` or resolve `false` or `Promise rejected` will prevent the default behavior.</small> |
-| on-negative-click | `() => boolean` |   _false_   | @negative-click | <small>The default behavior is closing the confirm. Return `false` or resolve `false` or `Promise rejected` will prevent the default behavior.</small> |
+|   negative-text   |    `String`     | _'Cencel'_  | :negative-text  |                                    <sub>Cancel button text. Corresponding button won't show if not set.</sub>                                     |
+|   positive-text   |    `String`     | _'Accept'_  | :positive-text  |                                   <sub>Confirm button text. Corresponding button won't show if not set.</sub>                                    |
+|     closable      |    `Boolean`    |   _false_   |    :closable    |                                                      <sub>Whether to show close button.</sub>                                                      |
+| on-positive-click | `() => boolean` |   _false_   | @positive-click | <sub>The default behavior is closing the confirm. Return `false` or resolve `false` or `Promise rejected` will prevent the default behavior.</sub> |
+| on-negative-click | `() => boolean` |   _false_   | @negative-click | <sub>The default behavior is closing the confirm. Return `false` or resolve `false` or `Promise rejected` will prevent the default behavior.</sub> |
 
 ### Slots
 
