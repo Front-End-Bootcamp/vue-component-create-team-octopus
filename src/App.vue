@@ -27,9 +27,12 @@ const selectProduct = ref('');
 
 <style>
 .container {
+	padding-top: 15%;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	height: 100vh;
+	background-image: linear-gradient(-45deg, #ffffff, #ffffff 50%, #f6f6f6 50%, #f6f6f6);
+	background-size: 7px 7px;
 }
 </style>

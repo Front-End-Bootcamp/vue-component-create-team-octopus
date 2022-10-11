@@ -99,11 +99,11 @@ const show = computed(() => {
 
 	&__input {
 		width: 100%;
-		padding: 8px 12px;
+		padding: 10px 14px;
 		border: 0;
 		border-radius: 8px;
-		background-color: white;
-		border: 2px solid whitesmoke;
+		background-color: #ffffff;
+		border: 2px solid #f7e7e5;
 		min-width: 320px;
 		transition: all 0.3s ease-in-out;
 
@@ -121,7 +121,7 @@ const show = computed(() => {
 		border-radius: 0 0 8px 8px;
 
 		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-		border: 2px solid white;
+		border: 2px solid #f7e7e5;
 		border-top: 0;
 		display: flex;
 		flex-direction: column;
@@ -151,18 +151,17 @@ const show = computed(() => {
 			display: block;
 
 			&:hover {
-				background-color: #fff;
+				background-color: #f7e7e5;
 			}
 
 			&.active {
-				background-color: #fff;
+				background-color: #f7e7e5;
 			}
 		}
 	}
 
 	&.active {
 		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
 		.autocomplate__input {
 			border-radius: 8px 8px 0 0;
 		}
