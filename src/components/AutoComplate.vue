@@ -1,18 +1,9 @@
 <script setup>
 import { ref, computed } from 'vue'
 const props = defineProps({
-	options: {
-		type: Array,
-		default: []
-	},
-	select: {
-		type: String,
-		default: ''
-	},
-	placeholder: {
-		type: String,
-		default: ''
-	}
+	options: { type: Array, default: [] },
+	select: { type: String, default: '' },
+	placeholder: { type: String, default: '' }
 });
 const emit = defineEmits(['update:select']);
 
@@ -162,6 +153,7 @@ const show = computed(() => {
 
 	&.active {
 		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
 		.autocomplate__input {
 			border-radius: 8px 8px 0 0;
 		}
