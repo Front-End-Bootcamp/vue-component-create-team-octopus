@@ -46,6 +46,7 @@ const keyupEsc = () => {
 }
 const keyupDelete = () => {
 	counter.value = -1;
+	return;
 }
 const keyupArrowUp = () => {
 	if (counter.value > 0) {
