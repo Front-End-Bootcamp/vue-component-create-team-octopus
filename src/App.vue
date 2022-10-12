@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import Autocomplate from './components/Autocomplate.vue';
+import Autocomplete from './components/Autocomplete.vue';
 
 const productList = [
 	'Apple',
@@ -21,7 +21,7 @@ const selectProduct = ref('');
 
 <template>
 	<div class="container">
-		<Autocomplate :options="productList" v-model:select="selectProduct" placeholder="Search product"></Autocomplate>
+		<Autocomplete :options="productList" v-model:select="selectProduct" placeholder="Search product"></Autocomplete>
 	</div>
 </template>
 
