@@ -68,7 +68,7 @@ const show = computed(() => {
 </script>
 
 <template>
-	<div class="autocomplate" :class="{'active' : show}">
+	<div class="autocomplete" :class="{'active' : show}">
 		<input type="text" class="autocomplate__input" :value="props.select" :placeholder="props.placeholder"
 			@input="inputHandler" @keyup.enter="keyupEnter" @keyup.esc="keyupEsc" @keyup.arrow-up="keyupArrowUp"
 			@keyup.arrow-down="keyupArrowDown" @keyup.delete="keyupDelete">
