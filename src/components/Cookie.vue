@@ -1,6 +1,6 @@
 <script setup>
 import { computed } from "vue"
-const props = defineProps(['text','feedback']);
+const props = defineProps(['title','text','feedback']);
 const emit = defineEmits(['update:feedback']);
 
 const clickHandler = () => {
@@ -26,7 +26,12 @@ const show = computed(() => {
 <template>
 	<div class="cookie" v-if="show" >
 		<div class="cookie__content">
-			{{props.text}}
+			<div class="cookie__header">
+			{{props.title}}
+			</div>
+			<div class="cookie__text">
+				{{props.text}}
+			</div>
 		</div>
 		<button class="cookie__button" @click="clickHandler">
 			Accept
@@ -44,7 +49,7 @@ const show = computed(() => {
   align-items: center;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.377);
-  padding: 8px;
+  padding: 50px;
   border-radius: 8px;
   gap: 24px;
 
@@ -52,9 +57,15 @@ const show = computed(() => {
     color: #fff;
 		width: 100%;
   }
-
+	&__header {
+    color: #fff;
+		width: 100%;
+		font-size: 30px;
+		font-weight: bold;
+		padding-bottom: 15px;
+  }
   &__button {
-    padding: 4px 8px;
+    padding: 15px 30px;
     text-transform: uppercase;
     background-color: royalblue;
     color: #fff;
@@ -62,5 +73,8 @@ const show = computed(() => {
     border: none;
     border-radius: 6px;
   }
+	&__text {
+		font-size: large;
+	}
 }
 </style>
