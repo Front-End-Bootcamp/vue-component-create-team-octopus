@@ -34,10 +34,10 @@ const show = computed(() => {
 				{{props.text}}
 				</div>
 			</div>
+		</slot>
 		<button class="cookie__button" @click="clickHandler">
 			Accept
 		</button>
-		</slot>
 	</div>
 </template>
 
