@@ -1,34 +1,49 @@
 <script setup>
-import BootcampLogo from "./assets/svg/BootcampLogo.vue"
-import HelloWorld from './components/HelloWorld.vue'
+
+import { ref } from 'vue'
+import Autocomplete from './components/Autocomplete.vue';
+import Cookie from "./components/Cookie.vue";
+
+const feedback = ref();
+
+const productList = [
+	'Apple',
+	'Apricot',
+	'Avocado',
+	'Banana',
+	'Blackberry',
+	'Boysenberry',
+	'Cantaloupe',
+	'Cherry',
+	'Clementine',
+	'Damson',
+	'Date',
+	'Dragonfruit',
+];
+const selectProduct = ref('');
 </script>
 
 <template>
-	<div>
-		<BootcampLogo />
-		<br />
-		<a href="https://vitejs.dev" target="_blank">
-			<img src="/vite.svg" class="logo" alt="Vite logo" />
-		</a>
-		<a href="https://vuejs.org/" target="_blank">
-			<img src="/vue.svg" class="logo vue" alt="Vue logo" />
-		</a>
+	<div class="container">
+		<Teleport to="body">
+		<Cookie title="Çerezleri kabul et" text="Bizler, güvenliğinize önem veriyor ve bu Çerez Politikası ile siz sevgili ziyaretçilerimizi,
+		 web sitemizde hangi çerezleri, hangi amaçla kullandığımız ve çerez ayarlarınızı nasıl değiştireceğiniz konularında kısaca bilgilendirmeyi hedefliyoruz.
+		 Sizlere daha iyi hizmet verebilmek adına, çerezler vasıtasıyla, ne tür kişisel verilerinizin hangi amaçla toplandığı ve nasıl işlendiği konularında,
+		 kısaca bilgi sahibi olmak için lütfen bu Çerez Politikasını okuyunuz.
+		 Daha fazla bilgi için Gizlilik Politikamıza göz atabilir ya da bizlerle çekinmeden iletişime geçebilirsiniz." v-model:feedback="feedback"></Cookie>
+	</Teleport>
+		<Autocomplete :options="productList" v-model:select="selectProduct" placeholder="Search product"></Autocomplete>
 	</div>
-	<HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
-.logo {
-	height: 6em;
-	padding: 1.5em;
-	will-change: filter;
-}
-
-.logo:hover {
-	filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.vue:hover {
-	filter: drop-shadow(0 0 2em #42b883aa);
+<style>
+.container {
+	padding-top: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	height: 100vh;
+	background-image: linear-gradient(-45deg, #ffffff, #ffffff 50%, #f6f6f6 50%, #f6f6f6);
+	background-size: 7px 7px;
 }
 </style>
