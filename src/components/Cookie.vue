@@ -25,17 +25,19 @@ const show = computed(() => {
 
 <template>
 	<div class="cookie" v-if="show" >
-		<div class="cookie__content">
-			<div class="cookie__header">
-			{{props.title}}
-			</div>
-			<div class="cookie__text">
+		<slot>
+			<div class="cookie__content">
+				<div class="cookie__header">
+				{{props.title}}
+				</div>
+				<div class="cookie__text">
 				{{props.text}}
+				</div>
 			</div>
-		</div>
 		<button class="cookie__button" @click="clickHandler">
 			Accept
 		</button>
+		</slot>
 	</div>
 </template>
 
