@@ -69,14 +69,14 @@ const show = computed(() => {
 
 <template>
 	<div class="autocomplete" :class="{'active' : show}">
-		<input type="text" class="autocomplate__input" :value="props.select" :placeholder="props.placeholder"
+		<input type="text" class="autocomplete__input" :value="props.select" :placeholder="props.placeholder"
 			@input="inputHandler" @keyup.enter="keyupEnter" @keyup.esc="keyupEsc" @keyup.arrow-up="keyupArrowUp"
 			@keyup.arrow-down="keyupArrowDown" @keyup.delete="keyupDelete">
-		<div class="autocomplate__wrapper" v-if="show">
-			<div class="autocomplate__item" v-for="(result, index) in results" :key="index">
+		<div class="autocomplete__wrapper" v-if="show">
+			<div class="autocomplete__item" v-for="(result, index) in results" :key="index">
 				<span @click="clickHandler(result)" :class="{'active': index === counter}">⌕ {{result}}</span>
 			</div>
-			<div class="autocomplate__footer">
+			<div class="autocomplete__footer">
 				<b>⇅</b> to navigate, <b>↲</b> to select, <b>esc</b> to close
 			</div>
 		</div>
@@ -84,7 +84,7 @@ const show = computed(() => {
 </template>
 
 <style lang="scss">
-.autocomplate {
+.autocomplete {
 	position: relative;
 	border-radius: 8px;
 	transition: all 0.3s ease-in-out;
@@ -155,7 +155,7 @@ const show = computed(() => {
 	&.active {
 		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
-		.autocomplate__input {
+		.autocomplete__input {
 			border-radius: 8px 8px 0 0;
 		}
 	}
