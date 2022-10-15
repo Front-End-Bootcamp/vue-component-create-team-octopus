@@ -1,8 +1,10 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=8837416&assignment_repo_type=AssignmentRepo)
 
-# Vue 3 + Vite
+# Autocomplete, Cookie, Popup
 
 This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+
+<a href="https://bright-seahorse-dbfa48.netlify.app/">LIVE</a>
 
 # Autocomplate component
 
@@ -51,15 +53,3 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 |  Name   | Parameters | Description |
 | :-----: | :--------: | :---------: |
 | content |    `()`    |     ...     |
-
-# Notification component
-
-### Props
-
-|   Name    |   Type    |    Default    | Binding Way | Description |
-| :-------: | :-------: | :-----------: | :---------: | :---------: |
-| placement | `String`  | _'top-right'_ | :placement  |     ...     |
-|  content  | `String`  |  _undefined_  |  :content   |     ...     |
-|   icon    | `String`  |  _'message'_  |    :icon    |     ...     |
-|  variant  | `String`  |  _'default_   |  :variant   |     ...     |
-| closable  | `Boolean` |    _false_    |  :closable  |     ...     |
