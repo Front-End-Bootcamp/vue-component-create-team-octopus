@@ -6,6 +6,10 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 <a href="https://bright-seahorse-dbfa48.netlify.app/">LIVE</a>
 
+# Screenshots
+
+<img src="./screenshots/screen.png"/>
+
 # Autocomplate component
 
 ### Props
