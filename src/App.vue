@@ -1,9 +1,10 @@
 <script setup>
-
-import { ref } from 'vue'
+import { ref } from 'vue';
 import Autocomplete from './components/Autocomplete.vue';
 import Cookie from "./components/Cookie.vue";
+import Pupup from './components/Pupup.vue';
 
+const showPopup = ref(false);
 const feedback = ref();
 
 const productList = [
@@ -33,6 +34,11 @@ const selectProduct = ref('');
 		 Daha fazla bilgi için Gizlilik Politikamıza göz atabilir ya da bizlerle çekinmeden iletişime geçebilirsiniz." v-model:feedback="feedback"></Cookie>
 	</Teleport>
 		<Autocomplete :options="productList" v-model:select="selectProduct" placeholder="Search product"></Autocomplete>
+    <Teleport to="body">
+		<Pupup title="Title" text="Text" v-model:show="showPopup" negative-text="Cancel" positive-text="Ok" closable
+			@positive-click="" @negative-click="">
+		</Pupup>
+	</Teleport>
 	</div>
 </template>
 
