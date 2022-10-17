@@ -1,10 +1,10 @@
 <script setup>
 const props = defineProps({
-	title: { type: String },
+	title: { type: String, default: undefined },
 	text: { type: String },
 	show: { type: Boolean, default: false },
-	negativeText: { type: String, default: 'Cancel' },
-	positiveText: { type: String, default: 'Accept' },
+	negativeText: { type: String, default: undefined },
+	positiveText: { type: String, default: undefined },
 	closable: { type: Boolean, default: false },
 });
 const emit = defineEmits(['positive-click', 'negative-click', 'update:show']);
