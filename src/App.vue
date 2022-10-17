@@ -48,14 +48,14 @@ const selectProduct = ref('');
 			<Pupup title="Title" text="Text" v-model:show="showPopup" negative-text="Cancel" positive-text="Accept" closable
 				@positive-click="" @negative-click="">
 			</Pupup>
-			<Pupup title="Title" text="Text" v-model:show="showImagePopup" negative-text="Cancel" positive-text="Accept" closable
-				@positive-click="" @negative-click="">
+			<Pupup title="Title" text="Text" v-model:show="showImagePopup" negative-text="Cancel" positive-text="Accept"
+				closable @positive-click="" @negative-click="">
 				<template #body>
 					<img src="https://picsum.photos/300/200" alt="" class="img-fluid">
 				</template>
 			</Pupup>
-			<Pupup title="Title" text="Text" v-model:show="showVideoPopup" negative-text="Cancel" positive-text="Accept" closable
-				@positive-click="" @negative-click="">
+			<Pupup title="Title" text="Text" v-model:show="showVideoPopup" negative-text="Cancel" positive-text="Accept"
+				closable @positive-click="" @negative-click="">
 				<template #body>
 					<iframe width="452" height="300" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
