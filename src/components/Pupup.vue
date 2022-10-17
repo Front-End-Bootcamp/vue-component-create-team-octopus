@@ -81,7 +81,8 @@ const positiveHandler = () => {
 		background-color: #fff;
 		border-radius: 6px;
 		padding: 24px;
-		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
 		gap: 24px;
 
 		&-header {
@@ -112,10 +113,6 @@ const positiveHandler = () => {
 					stroke: #000;
 				}
 			}
-		}
-
-		.popup__content-body {
-			margin-bottom: 24px;
 		}
 
 		.popup__content-action {
